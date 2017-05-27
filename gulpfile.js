@@ -10,8 +10,8 @@ var concat = require('gulp-concat');
 var babel = require('gulp-babel');
 
 var path={
-    js:     ['./angular-column-filter/column-filter.directive.js'],
-    css:    ['./angular-column-filter/column-filter.css']
+    js:     ['./dist/column-filter.directive.js'],
+    css:    ['./dist/column-filter.css']
 };
 
 gulp.task('js:minify',function(){
@@ -20,15 +20,15 @@ gulp.task('js:minify',function(){
         .pipe(concat('column-filter.directive.min.js'))
         .pipe(babel())
         .pipe(uglify())
-        .pipe(gulp.dest('./angular-column-filter/dist'));
+        .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('css:merge',function(){
+gulp.task('css:minify',function(){
     return gulp.src(path.css)
         .pipe(plumber())
         .pipe(concat('column-filter.min.css'))
         .pipe(cleanCss())
-        .pipe(gulp.dest('./angular-column-filter/dist'));
+        .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('default',function(){
