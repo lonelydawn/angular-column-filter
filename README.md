@@ -1,6 +1,6 @@
 # angular-column-filter
 This is a table column filter depending on jquery and angular.
-You can use it to select needed data by toggle the thead field.
+You can use it to select needed data by toggle the thead field which is transformed to a filter.
 
 ## dependencies
 * jquery
@@ -122,7 +122,7 @@ $scope.arr = {
     };
 ```
 #### filter
-The key filter is a json array, its key indicates which column will be transformed to a filter and its value make up the filter options.
+'filter' is a json array, its key indicates which column will be transformed to a filter and its value make up the filter options.
 
 #### field
 'field' is a array, it make up the thead.
@@ -131,7 +131,7 @@ The key filter is a json array, its key indicates which column will be transform
 'data' is a two-dimensional array, it make up the tbody.
 
 ## notice
-You must notice that filter is used for transforming some column to be a filter, so its key can't out of index of data or field's length. Then you must know the data[i]'s length equals field's length.
+You must notice that filter is used for transforming some column to be a filter, so its key can't out of index of data or field's length. Then you must know the data[i]'s length equals field's length and the same index of both array is consistent on type.
 
 ## end
 OK,that's all.Then u can take a try!
