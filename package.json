@@ -1,20 +1,20 @@
 {
   "name": "angular-column-filter",
   "version": "1.0.0",
-  "description": "This is table column filter depending on angular and jquery. ",
+  "description": "This is table column filter depending on angular and jquery.",
   "main": "gulpfile.js",
-  "dependencies": {
-    "jquery": "^3.2.1",
-    "angular": "^1.6.4"
+  "directories": {
+    "test": "test"
   },
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "gulp-clean-css": "^3.4.0",
     "gulp-concat": "^2.6.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-clean-css": "^3.4.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-plumber": "^1.1.0"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "."
   },
@@ -23,8 +23,8 @@
     "url": "git+https://github.com/lonelydawn/angular-column-filter.git"
   },
   "keywords": [
-    "angular",
-    "table"
+    "angular-column-filter",
+    "npm"
   ],
   "author": "lonelydawn",
   "license": "MIT",
