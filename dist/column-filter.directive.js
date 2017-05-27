@@ -92,7 +92,6 @@ app.directive("columnFilter", function () {
                             if(seed != "全部"){
                                 var tmpArr = [];
                                 for (var i = 0; i < result.length; i++) {
-                                    console.log(seed, result[i][index]);
                                     if (seed == result[i][index]) {
                                         tmpArr.push(result[i]);
                                     }
