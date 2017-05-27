@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <!--<base href="/"/>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>带列筛选功能的表格</title>
+    <link rel="stylesheet" media="screen" href="user-table.css"/>
+    <link rel="stylesheet" media="screen" href="dist/column-filter.css"/>
+</head>
+
+<body>
+<div ng-controller="testCtrl">
+    <column-filter ng-table-data="arr"></column-filter>
+</div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="user-table.controller.js"></script>
+<script type="text/javascript" src="dist/column-filter.directive.js"></script>
+</body>
+</html>
