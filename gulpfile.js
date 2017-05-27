@@ -4,6 +4,7 @@
 
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
+var ngAnnotate = require('gulp-ng-annotate');
 var uglify = require('gulp-uglify');
 var cleanCss = require('gulp-clean-css');
 var concat = require('gulp-concat');
@@ -17,6 +18,7 @@ var path={
 gulp.task('js:minify',function(){
     return gulp.src(path.js)
         .pipe(plumber())
+        .pipe(ngAnnotate())
         .pipe(concat('column-filter.directive.min.js'))
         .pipe(babel())
         .pipe(uglify())

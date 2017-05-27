@@ -1,6 +1,6 @@
 {
   "name": "angular-column-filter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is table column filter depending on angular and jquery. ",
   "main": "gulpfile.js",
   "dependencies": {
