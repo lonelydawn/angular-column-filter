@@ -24,7 +24,7 @@ This package just designed for program which ng-app = "app".
 If u want to extend or change its apply, u can simply modify column-filter.directive.js.
 
 ## parameter
-Currently, we have only parameter.
+Currently, we have only one parameter.
 * ng-table-data
 
 This parameter construct the table including of data and data's filter.
