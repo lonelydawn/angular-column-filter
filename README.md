@@ -8,5 +8,5 @@ You can use it to select needed data by toggle the thead field.
 
 ## npm install
 You can get it by npm.
-    * npm install angular-column-filter
+      * npm install angular-column-filter
 
